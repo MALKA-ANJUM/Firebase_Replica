@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+    padding: 0 2em;
+    background: #fff;
+}
+.navbar .left{
+    display: flex;
+}
+.navbar .left .menu{
+    display: none;
+}
+.navbar .left .logo{
+    max-width: 125px;  
+    width: 100%; 
+    line-height: 3;
+    display: flex;
+}
+nav > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    line-height: 3;
+    cursor: pointer;
+    padding: 0 3em;  
+}
+nav > ul > li{
+    position: relative;
+    font-weight: 600;
+    color: #202B39;
+    font-size: 0.9em;
+}
+nav > ul > li::after{
+    content: '';
+    width: 0;
+    height: 0.25rem;
+    position: absolute;
+    left: 0.25em;
+    bottom: 0em;
+    background: #0277BD;
+    transition: width 200ms ease-in-out;
+}
+nav > ul > li:hover::after{
+    width: 80%;
+}
+nav > ul > li:hover ul{
+    opacity: 1;
+    visibility: visible;
+}
+nav ul li a{
+    color: #202B39;
+}
+nav  ul li i{
+    position: relative;
+    transition: transform 200ms ease-in-out;
+}
+nav  ul li:hover i{
+    transform: rotate(180deg) translate(0);
+}
+nav .active:after{
+    content: '';
+    width: 80%;
+    height: 0.25rem;
+    position: absolute;
+    left: 0.25em;
+    bottom: 0em;
+    background: #0277BD;
+    transition: width 200ms ease-in-out;
+}
+nav .dropdown{
+    position: absolute;
+    top: 2.8rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background: white;
+    width: 12rem;
+    padding: 1em;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 200ms ease-in-out; 
+}
+.navbar .dropdown li{
+    transition: 0.2s ease-in-out;   
+}
+.navbar .right{
+    display: flex;
+}
+.navbar .right .search input{
+    background: #E8EAED;
+    border: none;
+    padding: 0.5em;
+    border-radius: 4px;
+    color: #898C8F;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: capitalize;
+    margin: 0.2em;
+    position: relative;  
+}
+/* .navbar .right .search input::before{
+   position: absolute;
+   top: 10px;
+   content: '/f002';
+   width: 20px;
+   height: 20px;
+} */
+.navbar .right .language select,
+.footer .language select{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5em;
+    border-radius: 4px;
+    color: #5F6368;
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: capitalize;
+    margin: 0.2em;
+    width: max-content;
+}
+.navbar .right .console{
+    padding: 0.7em;
+    font-weight: 600;
+    font-size: 0.85em;
+    margin: 0.2em;
+    width: max-content;
+}
+.navbar .right .console a{
+    color: #1A73E8;
+}
+.navbar .right .bar{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.2em;   
+}
+.navbar .right .profile{
+    width: 35px;
+    height: 35px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin-top: 0.2em;
+   margin-left: 1em;
+}
+/* inner nav */
+.inner-nav{
+    background: #039BE5;
+    color: #fff;
+    padding-top: 4em;
+    box-shadow: inset 0px -5px 5px rgba(0,0,0,0.3);
+    z-index: 99;    
+
+}
+.inner-nav .nav-2{
+    display: flex;
+    justify-content: left; 
+    
+}
+.inner-nav .inner-nav-title{
+    margin-left: 3em;
+}
+.inner-nav .inner-nav-title h3{
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+.inner-nav .inner-nav-title h3:hover{
+    opacity: 0.8;
+}
+.nav-2 ul > li > a{
+    color: #fff;
+}
+.nav-2 ul > li > a:hover{
+    opacity: 0.8;
+}
+.nav-2 > ul > li::after{
+    content: '';
+    width: 0;
+    height: 0.25rem;
+    position: absolute;
+    left: 0.25em;
+    bottom: 0em;
+    background: #fff;
+    transition: width 200ms ease-in-out;
+}
+.nav-2 > ul > li:hover::after{
+    width: 80%;
+    opacity: 0.8;
+}
+.nav-2 .active:after{
+    content: '';
+    width: 80%;
+    height: 0.25rem;
+    position: absolute;
+    left: 0.25em;
+    bottom: 0em;
+    background: #fff;
+    transition: width 200ms ease-in-out;
+}
+.nav-2 .dropdown li a{
+    color: #000;
+    font-weight: 500;
+}
+.header{
+    background: #039BE5;
+    color: #fff;
+    padding: 3em;
+} 
+.header-info{
+    max-width: 950px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.header-info h1{
+    margin-bottom: 1em;
+    font-weight: 500;
+}
+.header-info p{
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: 1em;
+}
+.header-info button{
+    margin: 2em;
+    border: none; 
+    background: #fff;
+    padding: 0.75em 2em;
+    border-radius: 2px; 
+}
+.header-info a{
+    color: #1A73E8;
+    font-weight: 600;
+}
+.header-info button:hover{
+    background: #d2f0ff;
+}
+.feature-card{
+    background: #F1F3F4;
+}
+.card-details{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2em;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3em 0;
+}
+.card-details .card{
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    overflow: hidden;
+}
+.card .card-info{
+    padding: 1.25em;
+}
+.card .card-info h3{
+    margin-bottom: 1em;
+    color: #1A73E8;
+    text-transform: capitalize;
+    font-size: 1.55em;
+    font-weight: 500;
+}
+.card .card-info p{
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    font-weight: 500;
+    line-height: 1.7;
+}
+.card .card-info strong{
+    color: #F57D01;
+}
+.card .card-info a{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0.5em 1em;
+    color: #1A73E8;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.card .card-info a:hover{
+    background: #d2f0ff;
+}
+/* ********documentation-card*********** */
+.document{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.documentation{
+    padding: 2em;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;  
+}
+.documentation .documentation-title{
+    padding: 2.5em 0;
+}
+.documentation .documentation-title h3{
+  
+    font-size: 2em;
+    font-weight: 500;
+}
+.documentation .documentation-title p{
+    font-size: 0.95em;
+    font-weight: 500;
+    padding: 1em 0;
+}
+.documentation-card{
+    display: grid;
+    grid-template-columns: auto auto;  
+}
+.documentation-card .card{
+    display: flex; 
+    margin: 1em 0;
+}
+.documentation-card .card .icon{
+   width: 11%;
+    text-align: center;  
+}
+.documentation-card .card .icon i{
+    color: #1A73E8;
+    font-size: 2.5em;
+    text-align: center;
+}
+.documentation-card .card .info{
+    width: 89%;
+}
+.documentation-card .card .info h3{
+    font-weight: 600;
+}
+.documentation-card .card .info p{
+    padding: 1em 0;
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: #202124;
+}
+.documentation-card .card .info a{
+    color: #1A73E8;
+}
+.information{
+    margin: 1em;
+}
+.info-links{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2) ;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: auto auto auto;
+    padding: 1.5em;
+}
+.info-links ul li{
+    line-height: 2;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.info-links ul li a{
+    color: #202124;
+    font-weight: 500;  
+}
+.info-links ul li a:hover{
+    color: #1A73E8;
+}
+/* *products* */
+.product{
+    display: flex;
+    margin: 1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em 0;
+}
+.product a{
+    width: 180px;
+}
+.product ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2em;
+}
+.product ul li{
+    padding-left: 2.5em;
+    font-size: 0.825em;
+    cursor: pointer;
+}
+.product ul li a{
+    color: #202124;
+    font-weight: 500;
+}
+.product ul li a:hover{
+    color: #1A73E8;
+}
+/* *footer* */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    align-items: center;
+}
+.footer .condition a{
+    color: #202124;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+
+/* for laptops */
+@media screen and (min-width: 1200px) and (max-width: 1550px){
+    .navbar .left nav ul li a{
+        display: none;
+      
+    }
+    .navbar .left .menu{
+        display: block;
+        line-height: 3;
+        padding-right: 1em;
+    }
+  
+}
+
+
+
+
+
+
+
+
+/* for tablets */
+@media screen and (max-width: 1199px){
+    .navbar .left nav ul li a{
+        display: none;
+      
+    }
+    .navbar .left .menu{
+        display: block;
+        line-height: 3;
+        padding-right: 1em;
+    }
+    .navbar .right .console{
+        display: none;
+    }
+    
+    .inner-nav .nav-2{
+        display: none;
+    }
+}
+
+
+
+/* for mobiles */
+@media screen and (max-width: 999px){
+    .navbar .left nav ul li a{
+        display: none;
+      
+    }
+    .navbar .right .console{
+        display: none;
+    }
+    .navbar .right .language{
+        display: none;
+    }
+    .card-details{
+        grid-template-columns: auto auto;
+        padding: 2em;
+    }
+   
+}
+@media screen and (max-width: 700px){
+    .navbar .right .search{
+        display: none;
+    }
+    .card-details{
+        grid-template-columns: auto;
+        padding: 2em;
+    }
+    .documentation-card{
+        grid-template-columns: auto;  
+    }
+    .info-links{
+        grid-template-columns: auto;
+    }
+    .product{
+        flex-direction: column;
+    }
+    .product ul{
+        flex-direction: column;
+        
+        align-items: flex-start;
+        padding: 0;
+        line-height: 2.5;
+       
+    }
+    .product ul li{
+        padding-left: 0;
+       
+    }
+    .footer{
+       flex-direction: column;
+       align-items: flex-start;
+       line-height: 2.5;
+    }
+}

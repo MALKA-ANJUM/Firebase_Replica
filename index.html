@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Documentation</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/e80646ae69.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+        <div class="left">
+            <div class="menu togglemenu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="lockup.svg" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Products <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Build</a></li>
+                            <li><a href="#">Release & Monitor</a></li>
+                            <li><a href="#">Engage</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Use Cases</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Docs <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Overview</a></li>
+                            <li><a href="#">Fundamentals <i class="fa-solid fa-caret-down"></i></a></li>
+                            <li><a href="#">Build <i class="fa-solid fa-caret-down"></i></a></li>
+                            <li><a href="#">Release & Monitor <i class="fa-solid fa-caret-down"></i></a></li>
+                            <li><a href="#">Engage <i class="fa-solid fa-caret-down"></i></a></li>
+                            <li><a href="#">Reference</a></li>
+                            <li><a href="#">Samples</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Community <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <div class="search">
+                <input type="text" id="search" name="search" placeholder="search">
+            </div>
+            <div class="language">
+                <select name="language" id="language">
+                    <option>english</option>
+                    <option>bahasa indonesia</option>
+                    <option>dutch</option>
+                    <option>espanol</option>
+                    <option>italiano</option>
+                    <option>urdu</option>
+                    <option>hindi</option>
+                    <option>polski</option>
+                    <option>pharsi</option>
+                    <option>bangla</option>
+                    <option>chinese</option>
+                    <option>arabic</option>
+                </select>              
+            </div>
+            <div class="console">
+                <a href="#">Go to console</a>
+            </div>
+            <div class="bar">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+            <div class="profile">
+                <img src="malka.jpeg" alt="">
+            </div>
+        </div>
+    </div> 
+    <!-- iner navbar -->
+    <div class="inner-nav">
+        <div class="inner-nav-title">
+            <h3>firebase documentation</h3>
+        </div>
+        <nav class="nav-2">
+            <ul>
+                <li>
+                    <a href="#" class="active">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Fundamentals <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#" class="active">Overview</a></li>
+                        <li><a href="#">Fundamentals <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Build <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Release & Monitor <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Engage <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Reference</a></li>
+                        <li><a href="#">Samples</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Build <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Fundamentals <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Build <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Release & Monitor <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Engage <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Reference</a></li>
+                        <li><a href="#">Samples</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" >Release & Monitor <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#" class="active">Overview</a></li>
+                        <li><a href="#">Fundamentals <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Build <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Release & Monitor <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Engage <i class="fa-solid fa-caret-down"></i></a></li>
+                        <li><a href="#">Reference</a></li>
+                        <li><a href="#">Samples</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Engage <i class="fa-solid fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Reference</a>
+                </li>
+                <li>
+                    <a href="#">Samples</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header">
+        <div class="header-info">
+            <h1>Learn the fundamentals</h1>
+            <p>If you’re already familiar with what Firebase products offer, let’s learn the basics, starting with creating and managing a Firebase project!</p>
+            <button><a href="#">Firebase fundamentals</a></button>
+        </div>
+    </div>
+
+    <div class="feature-card">
+        <div class="card-details">
+            <div class="card">
+                <div class="card-img">
+                    <img src="Build_480.png" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>build</h3>
+                    <p>Build powerful apps. <strong> Spin up your backend</strong> without managing servers. <strong>Effortlessly scale</strong> to support millions of users with Firebase databases, machine learning infrastructure, hosting and storage solutions, and Cloud Functions.</p>
+                    <a href="#">View documentation</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Release_Monitor_480.png" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Release & Monitor</h3>
+                    <p>Improve app quality in less time with less effort. <strong>Simplify testing</strong> , triaging, and troubleshooting. <strong>Carefully roll</strong> out features and monitor adoption. Pinpoint, prioritize, and <strong>fix stability and performance</strong> issues early.</p>
+                    <a href="#">View documentation</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <img src="Engage_480.png" alt="">
+                </div>
+                <div class="card-info">
+                    <h3>Engage</h3>
+                    <p>Boost user engagement with rich analytics, A/B testing, and messaging campaigns. <strong>Understand your users </strong> to better support and retain them. <strong>Run experiments</strong> to test ideas and uncover new insights. <strong>Customize your app</strong> for different user segments.</p>
+                    <a href="#">View documentation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="document">
+        <div class="documentation">
+            <div class="documentation-title">
+                <h3>Documentation and learning content</h3>
+                <p>Whether you learn by reading or by doing, Firebase offers you many resources to become skillful with our products.</p>
+            </div>
+            <div class="documentation-card">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Guides</h3>
+                        <p> Descriptive how-to content with both high-level introductions and step-by-step workflows for using Firebase products. Find Firebase guides under the <a href="#">Fundamentals</a>, <a href="#">Build</a>, <a href="#">Release & Monitor</a>, and <a href="#">Engage</a> tabs at the top of the page.</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Reference documentation</h3>
+                        <p>Formal reference documentation for Firebase SDKs, Firebase REST APIs, and Firebase tools. Find Firebase reference docs under the <a href="#">Reference</a> tab at the top of the page.</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Codelabs</h3>
+                        <p>Guided tutorials with hands-on coding to develop practical experience and build working code and apps. Start a Firebase codelab for <a href="#">iOS</a>, <a href="#">Android</a>, or <a href="#">Web</a>.</p>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="info">
+                        <h3>Quickstarts and samples</h3>
+                        <p>Fully working code to get started fast and see real-world integrations of Firebase features. Explore Firebase quickstarts and samples in the <a href="#">Samples</a> tab at the top of the page.</p>
+                    </div>
+                </div> 
+            </div>
+        </div> 
+    </div>
+
+    <div class="information">
+        <div class="info-links">
+            <ul>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Reference</a></li>
+                <li><a href="#">Samples</a></li>
+                <li><a href="#">Libraries</a></li>
+                <li><a href="#">GitHub</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Stay connected</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Firebase Summit</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact support</a></li>
+                <li><a href="#">Stack Overflow</a></li>
+                <li><a href="#">Slack community</a></li>
+                <li><a href="#">Google group</a></li>
+                <li><a href="#">Release notes</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product">
+        <a href="#"><img src="lockup-developers.svg" alt=""></a>
+        <ul>
+            <li><a href="#">Android</a></li>
+            <li><a href="#">Chrome</a></li>
+            <li><a href="#">Firebase</a></li>
+            <li><a href="#">Google Cloud Platform</a></li>
+            <li><a href="#">All products</a></li>
+        </ul>
+    </div>
+    <div class="footer">
+        <div class="condition">
+            <a href="#">Terms |</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="language">
+            <select name="language" id="language">
+                <option>english</option>
+                <option>bahasa indonesia</option>
+                <option>dutch</option>
+                <option>espanol</option>
+                <option>italiano</option>
+                <option>urdu</option>
+                <option>hindi</option>
+                <option>polski</option>
+                <option>pharsi</option>
+                <option>bangla</option>
+                <option>chinese</option>
+                <option>arabic</option>
+            </select>       
+        </div>  
+    </div>
+</div>
+
+
+
+
+
+
+  
+</body>
+</html>
