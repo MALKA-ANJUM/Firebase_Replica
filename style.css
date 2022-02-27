@@ -450,15 +450,19 @@ nav .dropdown{
 
 /* for tablets */
 @media screen and (max-width: 1199px){
-    .navbar .left nav ul li a{
+    .navigation{
         display: none;
       
+    }
+    .navigation.active{
+        display: block;
     }
     .navbar .left .menu{
         display: block;
         line-height: 3;
         padding-right: 1em;
     }
+    
     .navbar .right .console{
         display: none;
     }

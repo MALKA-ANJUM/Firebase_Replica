@@ -12,13 +12,13 @@
     <div class="container">
     <div class="navbar">
         <div class="left">
-            <div class="menu togglemenu">
+            <div class="menu menu-toggle">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="logo">
                 <img src="lockup.svg" alt="">
             </div>
-            <nav>
+            <nav class="navigation">
                 <ul>
                     <li>
                         <a href="#">Products <i class="fa-solid fa-caret-down"></i></a>
@@ -305,6 +305,19 @@
         </div>  
     </div>
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous">
+</script>
+<script>
+    $(document).ready(function(){
+        $('.menu-toggle').click(function(){
+            $('.menu-toggle').toggleClass('active')
+            $('.navigation').toggleClass('active')
+        })
+    })
+</script>
 
 
 
